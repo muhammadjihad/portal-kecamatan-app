@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import './IzinUsaha/ui.dart';
+import './Administrasi/ui.dart';
 
 void main() => runApp(MyApp());
 
@@ -10,6 +11,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: new Home(),
+      theme: new ThemeData(
+        buttonColor: Colors.blue,
+        textTheme: new TextTheme(
+          button: new TextStyle(
+            color:Colors.white
+          )
+        )
+      ),
     );
   }
 }
@@ -22,7 +31,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
 
   List daftarPelayanan=[
-    {'nama':'Administrasi Kependudukan','gambar':'asset/img/planning.png','widget':new Layanan()},
+    {'nama':'Administrasi Kependudukan','gambar':'asset/img/planning.png','widget':new Administrasi()},
     {'nama':'Permohonan SKCK','gambar':'asset/img/population.png','widget':new Layanan()},
     {'nama':'Permohonan SKTM','gambar':'asset/img/permission.png','widget':new Layanan()},
     {'nama':'Perizinan Usaha','gambar':'asset/img/money.png','widget':new IzinUsaha()},
@@ -42,7 +51,7 @@ class _HomeState extends State<Home> {
         title: new Text(
           "Layanan Kecamatan Sumur Bandung",
           style: new TextStyle(
-            fontSize: 11
+            fontSize: 15
           ),
         ),
       ),
