@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:kecamatan/IzinUsaha/DaftarIzinUsaha/DetailTerdaftar/ui.dart';
-import 'package:kecamatan/IzinUsaha/DaftarIzinUsaha/ui.dart';
 
-import 'provider.dart';
-import 'bloc.dart';
+import './provider.dart';
+import './bloc.dart';
+
+import './DaftarIzinUsaha/DetailTerdaftar/ui.dart';
 import './DaftarIzinUsaha/ui.dart';
 
 class IzinUsaha extends StatefulWidget {
@@ -68,7 +68,7 @@ class _IzinUsahaState extends State<IzinUsaha> {
                 itemBuilder: (context,i){
                   return new ListTile(
                     leading: new CircleAvatar(
-                      backgroundImage: new NetworkImage('http://172.16.17.100:8000${items[i]['foto']}'),
+                      backgroundImage: new NetworkImage('http://172.16.17.155:8000${items[i]['foto']}'),
                     ),
                     title: new Text("Nama : "+items[i]['nama_pemohon']),
                     subtitle: new Text("NIK : "+items[i]['nomor_induk'].toString()),
@@ -118,7 +118,7 @@ class _IzinUsahaState extends State<IzinUsaha> {
                           deskripsiUsaha: items[i]['deskripsi_usaha'],
                           nomorInduk: items[i]['nomor_induk'],
                           verifikasi: items[i]['verifikasi'],
-                          foto: 'http://172.16.17.100:8000${items[i]['foto']}',
+                          foto: 'http://172.16.17.155:8000${items[i]['foto']}',
                         )
                       ));
                     },

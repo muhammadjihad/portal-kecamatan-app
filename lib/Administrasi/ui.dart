@@ -8,6 +8,10 @@ class Administrasi extends StatelessWidget {
     {'nama':'Kartu Keluarga','components':new KTP()},
     {'nama':'Surat Keterangan Tak Mampu','components':new KTP()},
     {'nama':'Surat Keterangan Catatan Kepolisian','components':new KTP()},
+    {'nama':'Surat Keterangan Menikah','components':new KTP()},
+    {'nama':'Surat Keterangan Ahli Waris','components':new KTP()},
+    {'nama':'Surat Ketarangan Hibah','components':new KTP()},
+    {'nama':'Surat Keterangan Gaib','components':new KTP()},
   ];
 
   @override

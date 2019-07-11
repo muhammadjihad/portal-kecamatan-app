@@ -53,6 +53,12 @@ flutter:
     - asset/img/money.png
     - asset/img/population.png
     - asset/img/planning.png
+    - asset/img/buangsampah.jpg
+    - asset/img/kantorkecamatan.jpg
+    - asset/img/tamanlalulintas.jpg
+    - asset/img/rangkaianacara.jpg
+    - asset/img/karnaval.jpg
+    - asset/img/enterprise.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
